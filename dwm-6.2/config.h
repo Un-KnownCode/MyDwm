@@ -82,9 +82,11 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *tim[] = { "/opt/deepinwine/apps/Deepin-TIM/run.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *flameshot[] = { "flameshot", "gui", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY|ControlMask,           XK_a,      spawn,          {.v = flameshot } },
 	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = tim } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
