@@ -83,9 +83,11 @@ static const char *tim[] = { "/opt/deepinwine/apps/Deepin-TIM/run.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
+static const char *vscode[] = { "code", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY,                       XK_a,      spawn,          {.v = vscode } },
 	{ MODKEY|ControlMask,           XK_a,      spawn,          {.v = flameshot } },
 	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = tim } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
