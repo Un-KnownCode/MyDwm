@@ -87,7 +87,7 @@ static const char *vscode[] = { "code", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_a,      spawn,          {.v = vscode } },
+	{ MODKEY|ControlMask,           XK_c,      spawn,          {.v = vscode } },
 	{ MODKEY|ControlMask,           XK_a,      spawn,          {.v = flameshot } },
 	{ MODKEY|ControlMask,           XK_t,      spawn,          {.v = tim } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
