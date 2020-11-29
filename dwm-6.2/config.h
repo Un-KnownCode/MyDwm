@@ -40,7 +40,7 @@ static const unsigned int alphas[][3]      = {
 
 /* tagging */
 //static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
-static const char *tags[] = { "\uf120", "\uf7ae", "\uf121", "\uf04b", "\ue62e", "\uf251", "\ue727", "\uf537", "\uf684" };
+static const char *tags[] = { "\uf120", "\uf7ae", "\uf121", "\uf04b", "\ue62e", "\uf251", "\ue727", "\uf537", "\uf684","\uf120", "\uf7ae", "\uf121", "\uf04b", "\ue62e", "\uf251", "\ue727", "\uf537", "\uf684" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -146,6 +146,15 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+	TAGKEYS(                        XK_F1,                     9)
+	TAGKEYS(                        XK_F2,                     10)
+	TAGKEYS(                        XK_F3,                     11)
+	TAGKEYS(                        XK_F4,                     12)
+	TAGKEYS(                        XK_F5,                     13)
+	TAGKEYS(                        XK_F6,                     14)
+	TAGKEYS(                        XK_F7,                     15)
+	TAGKEYS(                        XK_F8,                     16)
+	TAGKEYS(                        XK_F9,                     17)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
