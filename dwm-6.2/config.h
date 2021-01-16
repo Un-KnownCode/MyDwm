@@ -84,7 +84,7 @@ static const char *dmenucmd[] = { "rofi","-show","drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *tim[] = { "/opt/deepinwine/apps/Deepin-TIM/run.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *scratchpadcmd[] = { "alacritty", "-t", scratchpadname, NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
 static const char *vscode[] = { "code", NULL };
 
